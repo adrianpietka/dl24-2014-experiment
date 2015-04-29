@@ -1,0 +1,50 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+pre {
+    font-family: 'Courier New';
+    font-size: 12px;
+}
+
+#container {
+    padding: 25px;
+}
+
+#canvas {
+    margin: 50px auto;
+    display: block;
+}
+
+#error {
+    background: #C50101;
+    color: #fff;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+    #error .message {
+        top: 50%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: relative;
+    }
+
+    #error .message h1 {
+        text-transform: uppercase;
+    }
+    
+#error.show {
+    display: block;
+}
